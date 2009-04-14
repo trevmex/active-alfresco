@@ -1,0 +1,18 @@
+<h1>Listing alfrescos</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @alfrescos.each do |alfresco| %>
+  <tr>
+    <td><%= link_to 'Show', alfresco %></td>
+    <td><%= link_to 'Edit', edit_alfresco_path(alfresco) %></td>
+    <td><%= link_to 'Destroy', alfresco, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New alfresco', new_alfresco_path %>
